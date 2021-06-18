@@ -7,26 +7,43 @@
   <title>Programming Language Suggestor</title>
 </head>
 
-<body>
+<body style="background-color: black;">
 
-  <div class="Container">
-    <h1>Languagetron 5000</h1>
-    <p>Greetings, human! I am the Languagetron 5000 Programming Language Suggestor Bot, serial number: |01000111|01110010|01100101|01100111|01101111|01110010|01111001|00001101! You can call me Greg for short! </p>
-
-    <p>So you're interested in learning your first programming language, are you? Wonderful! I am going to ask you a series of questions to help narrow down which language is right for you! Sound good?</p>
-
-    <div class="queueQuestions">
-      <button class="btn btn-confirm" id="yes">Yes!</button>
-
-      <button class="btn btn-deny" id="no">No, not really, Greg.</button>
+  <div class="container">
+    <div class="box1">
+      <h1>LANGUAGE-A-TRON 5000</h1>
+      <h2>Greetings, human! I am the Language-a-tron 5000 Programming Language Suggestor Bot, serial number: |01000111|01110010|01100101|01100111|01101111|01110010|01111001|00001101! You may call me Greg for short!</h2>
     </div>
 
-    <div class="inputName">
-      <p>Well alright then, human! Say, don't you think things would be better if I knew your name? I sure do... Let me know! If not I guess that's fine.</p>
+    <div id="intro">
+      <p>So you're interested in learning your first programming language, are you? GOOD! I am going to ask you a series of questions to help narrow down which language is right for you! Sound good? Please confirm by clicking one of the two buttons below.</p>
 
-      <button class="btn btn-confirm" id="giveName">Provide Name</button>
+      <button class="button" id="yesPlease">Yes!</button>
 
-      <button class="btn btn-deny" id="noName">Remain Anonymous</button>
+      <button class="button" id="noThankYou">No, not really, Greg.</button>
+
+      <span id="denyGreg">I AM SAD BUT I UNDERSTAND. YOU MAY STILL CLICK YES IF YOU CHANGE YOUR MIND.</span>
+    </div>
+
+    <div id="inputName">
+      <p>INITIATE MIND ALTERATION PROTOCOL... I mean... Great choice, human! Say, don't you think things would be better if I knew your name? Since I am programmed to recognize free will, you have the option to provide a UNIT IDENTIFICATION NUMBER... I MEAN NAME.</p>
+
+      <button class="button" id="giveName">Provide Name</button>
+
+      <button class="button" id="noName">Remain Anonymous</button>
+
+      <span id="anonymous">Jacob here! Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg a little bit so I'll be your guide until he's back to normal. At any rate, Things WOULD be easier if I had something to call you so go ahead and choose a name from the list below.</span>
+
+      <div class="nameBox">
+        <select id="pickAName">
+          <option>Select a name</option>
+          <option>Big Cheese</option>
+          <option>Rosalia the Stalwart</option>
+          <option>James</option>
+          <option>Vanessa</option>
+      </select>
+      </div>
+      
 
     </div>
   </div>
