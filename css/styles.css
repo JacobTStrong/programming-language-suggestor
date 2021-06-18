@@ -1,3 +1,61 @@
-.inputName {
+#denyGreg {
   display: none;
+  color: green;
+}
+
+#yesPlease, #noThankYou {
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+#noThankYou {
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+#giveName, #noName {
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+.nameBox {
+  margin-top: 10px;
+  display: none;
+  color: green;
+}
+
+#anonymous {
+  display: none;
+  color: green;
+}
+
+#inputName {
+  display: none;
+}
+
+.box1 {
+  width: 98%;
+  border: solid black;
+  border-width: 10px;
+  background-color: green;
+  margin-bottom: 10px;
+}
+
+.box1 h2 {
+  padding-left: 8%;
+}
+
+.container h1 {
+  text-align: center;
+  color: black;
+}
+
+.container h2 {
+  font-size: large;
+  color: black;
+}
+
+.container p {
+  font-size: large;
+  color: green;
 }
