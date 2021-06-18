@@ -15,7 +15,7 @@
 
 ## Description
 
-For my second independant project as part of the Introduction to Programming course at Epicodus, I have been tasked with creating an application to help people who are curious about programming choose their first language. Users will be asked a series of five personality-based questions that will tell the application, Greg, which language is right for them! Once every question has been answered, Greg will suggest one of three languages: JavaScript, Python, or Swift. Kind of like the sorting hat from the Harry Potter series but more modern and realistic.
+For my second independant project as part of the Introduction to Programming course at Epicodus, I have been tasked with creating an application to help people who are curious about programming choose their first language. Users will be asked a series of personality-based questions that will tell the application, Greg, which language is right for them! Once every question has been answered, Greg will suggest one of five languages: JavaScript, Python, C#, Ruby, or Swift. Kind of like the sorting hat from the Harry Potter series but more modern and realistic.
 
 ## Installation and Setup
 
