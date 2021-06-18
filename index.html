@@ -7,7 +7,7 @@
   <title>Programming Language Suggestor</title>
 </head>
 
-<body style="background-color: black;">
+<!-- <body style="background-color: black;"> -->
 
   <div class="container">
     <div class="box1">
@@ -25,7 +25,7 @@
       <span id="denyGreg">I AM SAD BUT I UNDERSTAND. YOU MAY STILL CLICK YES IF YOU CHANGE YOUR MIND.</span>
     </div>
 
-    <div id="inputName">
+    <div id="typeName">
       <p>INITIATE MIND ALTERATION PROTOCOL... I mean... Great choice, human! Say, don't you think things would be better if I knew your name? Since I am programmed to recognize free will, you have the option to provide a UNIT IDENTIFICATION NUMBER... I MEAN NAME.</p>
 
       <button class="button" id="giveName">Provide Name</button>
@@ -34,18 +34,51 @@
 
       <span id="anonymous">Jacob here! Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg a little bit so I'll be your guide until he's back to normal. At any rate, Things WOULD be easier if I had something to call you so go ahead and choose a name from the list below.</span>
 
-      <div class="nameBox">
-        <select id="pickAName">
-          <option>Select a name</option>
-          <option>Big Cheese</option>
-          <option>Rosalia the Stalwart</option>
-          <option>James</option>
-          <option>Vanessa</option>
+    <div class="nameBox">
+      <select id="pickAName">
+        <option>Select a name</option>
+        <option>Big Cheese</option>
+        <option>Rosalia the Stalwart</option>
+        <option>James</option>
+        <option>Vanessa</option>
       </select>
-      </div>
+    </div>
+
+    <div id="questions">
+      <form id="suggestorForm">
+        <h2>Fantastic! Now that I know your name, we can get started on figuring out which programming language is best for you! Let's start off with an easy one.</h2>
+        <p>When is your birthday? Use the calendar below to make your selection.</p>
+        <div class="form-group">
+          <label for="born">Birthday:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+
+        <h2>Ah, what a great day that was! From here on out you will be answering multiple choice questions. Everyone's favorite! Also, keep in mind that there are NO wrong answers.</h2>
+
+        <p>Which of these three options do you feel is most important?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioOne" value="beauty" checked>
+            Beauty
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="radioOne" value="power">
+          Power
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioOne" value="Ease of use">
+            Ease of use
+          </label>
+        </div>
+      </form>
+    </div>
       
 
-    </div>
+
   </div>
 </body>
 </html>
