@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
@@ -16,9 +15,20 @@
 
     <p>So you're interested in learning your first programming language, are you? Wonderful! I am going to ask you a series of questions to help narrow down which language is right for you! Sound good?</p>
 
-    <button class="btn btn-confirm" id="yes">Yes!</button>
+    <div class="queueQuestions">
+      <button class="btn btn-confirm" id="yes">Yes!</button>
 
-    <button class="btn btn-deny" id="no">No, not really, Greg.</button>
+      <button class="btn btn-deny" id="no">No, not really, Greg.</button>
+    </div>
+    
+    <div class="inputName">
+      <p>Well alright then, human! Say, don't you think things would be better if I knew your name? I sure do... Let me know! If not I guess that's fine.</p>
+
+      <button class="btn btn-confirm" id="giveName">Provide Name</button>
+
+      <button class="btn btn-deny" id="noName">Remain Anonymous</button>
+
+    </div>
   </div>
 </body>
 </html>
