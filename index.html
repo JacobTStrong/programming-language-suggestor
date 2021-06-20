@@ -16,32 +16,47 @@
     </div>
 
     <div id="intro">
-      <p>So you're interested in learning your first programming language, are you? GOOD! I am going to ask you a series of questions to help narrow down which language is right for you! Sound good? Please confirm by clicking one of the two buttons below.</p>
+      <p>So you're interested in learning your first programming language, are you? GOOD! I am going to ask you a series of questions to help narrow down which language is right for you! Sound good? Please confirm by clicking one of the two buttons below:</p>
 
       <button class="button" id="yesPlease">Yes!</button>
 
       <button class="button" id="noThankYou">No, not really, Greg.</button>
 
-      <p><span id="denyGreg">I AM SAD BUT I UNDERSTAND. YOU MAY STILL CLICK YES IF YOU CHANGE YOUR MIND.</span></p>
+      <p><span id="denyGreg">I AM SAD, BUT I UNDERSTAND. YOU MAY STILL CLICK YES IF YOU CHANGE YOUR MIND.</span></p>
     </div>
 
     <div id="setName">
-      <p>INITIATE MIND ALTERATION PROTOCOL - I mean - Great choice, human! Say, don't you think things would be better if I knew your name? Since I am programmed to recognize free will, you have the option to provide a UNIT IDENTIFICATION NUM - I MEAN -  NAME.</p>
+      <p>INITIATE MIND ALTERATION PROTOCOL - I mean - Great choice, human! Say, don't you think things would be better if I knew your name? Since I am programmed to recognize free will, you have the <em>~option~</em> to provide a UNIT IDENTIFICATION NUM - I MEAN - NAME.</p>
 
-      <button class="button" id="name">Provide Name</button>
+      <button class="button" id="provideName">Provide Name</button>
 
       <button class="button" id="noName">Remain Anonymous</button>
+
+      <button class="button" id="submitName">continue</button>
+
+      <script>
+        document.getElementById("provideName").onclick = function() {
+          const userName = prompt("Enter your name here.");
+          document.getElementById("inputtedName").innerText = userName;
+        }
+      </script>
+    </div>
+
+    <div id="nameProvided">
+      <p>*<span id="inputtedName">___</span>, eh? Nice to meet you! This is Jacob by the way. Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg's OS for a little bit, so I'll be your guide until he's back to normal. Go ahead and click this continue button to, well, continue!*</p>
+
+      <button class="button" id="continue">Continue</button>
     </div>
 
     <div id="devDialog">
-      <p>*Jacob here! Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg a little bit so I'll be your guide until he's back to normal. At any rate, Things WOULD be easier if I had something to call you so go ahead and choose a name from the list below.*</p>
+      <p>*Jacob here! Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg's OS for a little bit, so I'll be your guide until he's back to normal. At any rate, Things WOULD be easier if I had something to call you, so go ahead and choose a name from the list below.*</p>
       
-      <select id="selectName" style="background-color: green;">
+      <select name="nameSelect" id="fakeName" style="background-color: green;">
         <option>Select a name</option>
-        <option>Big Cheese</option>
-        <option>Rosalia the Stalwart</option>
-        <option>James</option>
-        <option>Vanessa</option>
+        <option value="bigCheese">Big Cheese</option>
+        <option value="rosie">Rosalia the Stalwart</option>
+        <option value="james">James</option>
+        <option value="vanessa">Vanessa</option>
       </select>
 
       <button class="button" id="continueOne">Continue</button>
@@ -57,7 +72,7 @@
     </div>
 
     <div id="beginQuiz">
-      <h2>*Ah, what a great day that was! Now we'll take a look at a short list of multiple choice questions. Everyone's favorite! Also, keep in mind that there are NO wrong answers.*</h2>
+      <h2>*Ah, what a great day that was! Now let's take a look at a short list of multiple choice questions. Everyone's favorite! Also, keep in mind that there are NO wrong answers.*</h2>
 
       <button class="button" id="continueThree">Continue</button>
     </div>
@@ -198,7 +213,7 @@
 
         <p>*Nice! You made it through all of the multiple choice questions! Give yourself hand! In other news, I've got greg all back up and running like normal! He'll go ahead and present your last question to you now!*</p>
 
-        <p>Greetings once again, (userName). I see that you have reached the final question. This is no ordinary, simple question. This question is the most telling of all. Are you sure you wish to continue on to the final question? Here it is! Make your selection, then click "Submit":</p>
+        <p>Greetings once again! I see that you have reached the final question. This is no ordinary, simple question. This question is the most telling of all. Are you sure you wish to continue on to the final question? Here it is! Make your selection, then click "Submit":</p>
 
         <div id="pickColor">
           <label for="color">What is your favorite color?!</label>
@@ -211,10 +226,6 @@
       </form>
     </div>
       
-    <!-- <div class="results">
-      <h2>Congratulations (userName)! The answers that you have provided show me that the first programming langage that you learn should undoubtedly be:</h2>
-    </div> -->
-
   </div>
 </body>
 </html>
