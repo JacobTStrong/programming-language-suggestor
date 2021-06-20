@@ -51,6 +51,26 @@ text-align: center;
   display: none;
 }
 
+#submitName {
+  display: none;
+  background-color: green;
+}
+
+#provideName {
+  background-color: green;
+}
+
+#nameProvided {
+  display: none;
+  color: green;
+}
+
+#continue {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: green;
+}
+
 #continueOne {
   margin-top: 10px;
   margin-bottom: 10px;
