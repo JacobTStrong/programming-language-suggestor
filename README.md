@@ -1,6 +1,6 @@
 # Programming Language Suggestor
 
-#### An independant project made to test my knowledge of basic JavaScript and jQuery .
+#### An independent project made to test my knowledge of basic JavaScript and jQuery.
 
 #### By Jacob Strong
 
@@ -14,11 +14,11 @@
 
 ## Description
 
-For my second independant project as part of the Introduction to Programming course at Epicodus, I have been tasked with creating an application to help people who are curious about programming choose their first language. Users will be asked a series of personality-based questions that will tell the application, Greg, which language is right for them! Once every question has been answered, Greg will suggest one of three languages: JavaScript, Python, or Swift.
+For my second independent project as part of the Introduction to Programming course at Epicodus, I have been tasked with creating an application to help people who are curious about programming choose their first language. Users will be asked a series of personality-based questions that will tell the suggestor, Greg, which language is right for them! Once every question has been answered and the user clicks the "submit" button, Greg will suggest one of three languages: JavaScript, Python, or Swift.
 
 ## Installation and Setup
 
-* Make sure you have the latest versions of the related software installed on your computer.
+* Make sure you have the latest versions of the related software installed on your machine.
 * Clone this repository to your desktop by executing $ git clone https://github.com/JacobTStrong/programming-language-suggestor in the command line.
 * Locate the directory on your computer and open it in your text editor to view the code.
 * Double-click on the "index.html" file within the project directory to open the web page in your browser.
@@ -29,7 +29,7 @@ For my second independant project as part of the Introduction to Programming cou
 
 ## Known Bugs
 
-* No known bugs at this point in development
+* Choosing a name from the "Remain Anonymous" select box does not currently allow the user to be referred to my their selected name. Clicking the "Continue" button will still continue the survey.
 
 ## License
 
