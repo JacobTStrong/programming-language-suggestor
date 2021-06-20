@@ -137,3 +137,7 @@ text-align: center;
 body {
   font-family: sans-serif;
 }
+
+#jScript, #python, #swift {
+  display: none;
+}
