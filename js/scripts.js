@@ -8,8 +8,18 @@ $(document).ready(function() {
     $("#denyGreg").fadeToggle();
   });
 
-  $(".button#name").click(function() {
-    const inputtedName = prompt("What is your name?");
+  $(".button#provideName").click(function() {
+    $("#submitName").fadeToggle();
+  });
+
+  $(".button#submitName").click(function() {
+    $("#setName").fadeToggle();
+    $("#nameProvided").fadeToggle();
+  });
+
+  $(".button#continue").click(function() {
+    $("#nameProvided").fadeToggle();
+    $("#bDay").fadeToggle();
   });
 
   $(".button#noName").click(function() {
@@ -31,8 +41,6 @@ $(document).ready(function() {
     $("#beginQuiz").fadeToggle();
     $("#suggestorForm").fadeToggle();
   });
-
-  // const selectedName = $("#selectName").val();
 
   $(".button#noName").click(function() {
     $("#anonymous").fadeToggle();
