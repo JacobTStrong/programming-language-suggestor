@@ -46,7 +46,4 @@ $(document).ready(function() {
     $("#anonymous").fadeToggle();
     $("#nameBox").fadeToggle();
   });
-
-  
 });
-
