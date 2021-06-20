@@ -1,20 +1,44 @@
 $(document).ready(function() {
   $(".button#yesPlease").click(function() {
     $("#intro").fadeToggle();
-		$("#inputName").fadeToggle();
+		$("#setName").fadeToggle();
   });
 
   $(".button#noThankYou").click(function() {
     $("#denyGreg").fadeToggle();
   });
 
-  $(".button#giveName").click(function() {
-    const userName = prompt("What is your name?");
+  $(".button#name").click(function() {
+    const inputtedName = prompt("What is your name?");
   });
 
   $(".button#noName").click(function() {
-    $("#anonymous").fadeToggle();
-    $(".nameBox").fadeToggle();
+    $("#setName").fadeToggle();
+    $("#devDialog").fadeToggle();
   });
 
+  $(".button#continueOne").click(function() {
+    $("#devDialog").fadeToggle();
+    $("#bDay").fadeToggle();
+  });
+
+  $(".button#continueTwo").click(function() {
+    $("#bDay").fadeToggle();
+    $("#beginQuiz").fadeToggle();
+  });
+
+  $(".button#continueThree").click(function() {
+    $("#beginQuiz").fadeToggle();
+    $("#suggestorForm").fadeToggle();
+  });
+
+  // const selectedName = $("#selectName").val();
+
+  $(".button#noName").click(function() {
+    $("#anonymous").fadeToggle();
+    $("#nameBox").fadeToggle();
+  });
+
+  
 });
+
