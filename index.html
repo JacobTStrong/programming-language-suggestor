@@ -7,7 +7,7 @@
   <title>Programming Language Suggestor</title>
 </head>
 
-<!-- <body style="background-color: black;"> -->
+<body style="background-color: black;">
 
   <div class="container">
     <div class="box1">
@@ -22,62 +22,198 @@
 
       <button class="button" id="noThankYou">No, not really, Greg.</button>
 
-      <span id="denyGreg">I AM SAD BUT I UNDERSTAND. YOU MAY STILL CLICK YES IF YOU CHANGE YOUR MIND.</span>
+      <p><span id="denyGreg">I AM SAD BUT I UNDERSTAND. YOU MAY STILL CLICK YES IF YOU CHANGE YOUR MIND.</span></p>
     </div>
 
-    <div id="typeName">
-      <p>INITIATE MIND ALTERATION PROTOCOL... I mean... Great choice, human! Say, don't you think things would be better if I knew your name? Since I am programmed to recognize free will, you have the option to provide a UNIT IDENTIFICATION NUMBER... I MEAN NAME.</p>
+    <div id="setName">
+      <p>INITIATE MIND ALTERATION PROTOCOL - I mean - Great choice, human! Say, don't you think things would be better if I knew your name? Since I am programmed to recognize free will, you have the option to provide a UNIT IDENTIFICATION NUM - I MEAN -  NAME.</p>
 
-      <button class="button" id="giveName">Provide Name</button>
+      <button class="button" id="name">Provide Name</button>
 
       <button class="button" id="noName">Remain Anonymous</button>
+    </div>
 
-      <span id="anonymous">Jacob here! Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg a little bit so I'll be your guide until he's back to normal. At any rate, Things WOULD be easier if I had something to call you so go ahead and choose a name from the list below.</span>
-
-    <div class="nameBox">
-      <select id="pickAName">
+    <div id="devDialog">
+      <p>*Jacob here! Greg is acting a bit strange today but he wants me to let you know that he is not hurt by your unwillingness to tell him your name. I'm gonna be tweaking Greg a little bit so I'll be your guide until he's back to normal. At any rate, Things WOULD be easier if I had something to call you so go ahead and choose a name from the list below.*</p>
+      
+      <select id="selectName" style="background-color: green;">
         <option>Select a name</option>
         <option>Big Cheese</option>
         <option>Rosalia the Stalwart</option>
         <option>James</option>
         <option>Vanessa</option>
       </select>
+
+      <button class="button" id="continueOne">Continue</button>
     </div>
 
-    <div id="questions">
-      <form id="suggestorForm">
-        <h2>Fantastic! Now that I know your name, we can get started on figuring out which programming language is best for you! Let's start off with an easy one.</h2>
-        <p>When is your birthday? Use the calendar below to make your selection.</p>
-        <div class="form-group">
-          <label for="born">Birthday:</label>
-          <input id="born" class="form-control" type="date">
-        </div>
+    <div id="bDay">
+      <h2>*Fantastic! Now that I know your name, we can get started on figuring out which programming language is best for you! Let's start off with an easy one:*</h2>
+      <p>When is your birthday? Use the calendar below to make your selection.</p>
 
-        <h2>Ah, what a great day that was! From here on out you will be answering multiple choice questions. Everyone's favorite! Also, keep in mind that there are NO wrong answers.</h2>
+      <input id="born" type="date" style="background-color: green;">
 
-        <p>Which of these three options do you feel is most important?</p>
+      <button class="button" id="continueTwo">Continue</button>
+    </div>
+
+    <div id="beginQuiz">
+      <h2>*Ah, what a great day that was! Now we'll take a look at a short list of multiple choice questions. Everyone's favorite! Also, keep in mind that there are NO wrong answers.*</h2>
+
+      <button class="button" id="continueThree">Continue</button>
+    </div>
+
+    <div id="suggestorForm">
+      <form id="questions">
+        <p>Which of these four characteristics do you feel is most important?</p>
         <div class="radio">
           <label>
-            <input type="radio" name="radioOne" value="beauty" checked>
-            Beauty
+            <input type="radio" name="radioOne" value="design" style="color: green;">
+            Design
           </label>
         </div>
         <div class="radio">
           <label>
-          <input type="radio" name="radioOne" value="power">
-          Power
+            <input type="radio" name="radioOne" value="power">
+            Power
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="radioOne" value="Ease of use">
+            <input type="radio" name="radioOne" value="easeOfUse">
             Ease of use
           </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioOne" value="value">
+            Value
+          </label>
+        </div>
+
+
+        <p>What is your favorite season?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioTwo" value="winter">
+            Winter
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioTwo" value="spring">
+            Spring
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioTwo" value="summer">
+            Summer
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioTwo" value="fall">
+            Fall
+          </label>
+        </div>
+        
+        <p>Which of these hobbies do you align with most?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioThree" value="instrument">
+            Playing an instrument
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioThree" value="bike">
+            Cycling
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioThree" value="drawing">
+            Drawing
+            </input>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioThree" value="yarn">
+            Knitting
+          </label>
+        </div>
+
+        <p>Which of the four Hogwarts Houses do you believe you belong in?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFour" value="gHouse">
+            Gryffindor
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFour" value="sHouse">
+            Slytherin
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFour" value="rHouse">
+            Ravenclaw
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFour" value="hHouse">
+            Hufflepuff
+          </label>
+        </div>
+
+        <p>Which would you prefer?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFive" value="island">
+            A tropical island vacation
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFive" value="camp">
+            Camping in a serene forest
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFive" value="cruise">
+            A luxury cruise
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="radioFive" value="home">
+            A quiet staycation
+          </label>
+        </div>
+
+        <p>*Nice! You made it through all of the multiple choice questions! Give yourself hand! In other news, I've got greg all back up and running like normal! He'll go ahead and present your last question to you now!*</p>
+
+        <p>Greetings once again, (userName). I see that you have reached the final question. This is no ordinary, simple question. This question is the most telling of all. Are you sure you wish to continue on to the final question? Here it is! Make your selection, then click "Submit":</p>
+
+        <div id="pickColor">
+          <label for="color">What is your favorite color?!</label>
+          <input id="color" class="favoriteColor" type="color">
+        </div>
+
+        <div id="submit">
+          <input type="submit">
         </div>
       </form>
     </div>
       
-
+    <!-- <div class="results">
+      <h2>Congratulations (userName)! The answers that you have provided show me that the first programming langage that you learn should undoubtedly be:</h2>
+    </div> -->
 
   </div>
 </body>
