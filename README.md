@@ -30,6 +30,7 @@ For my second independent project as part of the Introduction to Programming cou
 ## Known Bugs
 
 * Choosing a name from the "Remain Anonymous" select box does not currently allow the user to be referred to my their selected name. Clicking the "Continue" button will still continue the survey.
+* There is currently no branching functionality. Will be updating to branching in the coming days.
 
 ## License
 
