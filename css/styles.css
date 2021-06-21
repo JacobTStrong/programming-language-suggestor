@@ -122,8 +122,16 @@ text-align: center;
   margin-bottom: 30px;
 }
 
-#submit{
+#submitForm{
   margin-left: 48%;
+  background-color: green;
+  display: none;
+}
+
+#refreshQuiz {
+  margin: auto;
+  background-color: green;
+  display: none;
 }
 
 .radio {
@@ -138,6 +146,17 @@ body {
   font-family: sans-serif;
 }
 
-#jScript, #python, #swift {
+#jScript {
   display: none;
+  text-decoration: green;
+}
+
+#python {
+  display: none;
+  text-decoration: green;
+}
+
+#swift {
+  display: none;
+  text-decoration: green;
 }
